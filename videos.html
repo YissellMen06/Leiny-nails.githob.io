@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><h1>Leiny-Nails</h1></div>
+    <nav>
+      <ul>
+        <ul>
+         
+          <li><a href="index.html">Bienvenidos</a></li>
+          <li><a href="leiny.html">Leiny-Nails</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="mas.html">Mas...</a></li>
+          
+          <li>
+            <a href="http://facebook.com/groups/1310897592921291/"><i class="fab fa-facebook"></i></a>
+            <a href="http://www.instagram.com/unas.lindas25?igsh=emhpajBjbzEwc3Nj"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/1849-251-6760"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+   </header>
+ <script src="js/scripts.js"></script>
+       
+
+<div class="container">
+  <div class="heading">Video Gallery</div>
+
+<div class="video-container">
+
+<div class="video">
+  <video src="videos/vd1.mp4" muted></video>
+</div>
+<div class="video">
+  <video src="videos/vd2.mp4" muted></video>
+</div>
+<div class="video">
+  <video src="videos/vd3.mp4" muted></video>
+</div>
+<div class="video">
+  <video src="videos/vd4.mp4" muted></video>
+</div>
+<div class="video">
+  <video src="videos/vd5.mp4" muted></video>
+</div>
+<div class="video">
+  <video src="videos/video1.mp4" muted></video>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+var video = document.querySelectorAll('video')
+
+video.forEach(play => play.addEventListener('click', () =>{
+
+  play.classList.toggle('active');
+
+  if(play.paused){
+play.play();
+  }else{
+    play.pause();
+    play.currentTime = 0;
+  }
+
+}));
+
+</script>
+
+
+<div class="copyright">
+  <p>copyright@ <a href="creador.html"><i class="fa-solid fa-user" style="color: rgb(40, 35, 63);"></i> Marianny</a> Made wtih<i class="fas fa-heart" style="color: #ff004f;"></i> by easy tutorials</p>
+</div>
+
+
+
+</div>
+
+
+
+</body>
+</html>

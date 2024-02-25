@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Personal</title>
+    <link rel="stylesheet" href="estilop.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="js/fontawesome.min.js">
+</head>
+<body> 
+  
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpeg" alt="Leiny Nails Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bienvenidos</a></li>
+                <li><a href="leiny.html">Leiny-Nails</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="mas.html">Mas...</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="manicurista.html">Manicurista</a></li>
+                <li>
+                    <a href="http://facebook.com/groups/1310897592921291/" ><i class="fab fa-facebook"></i></a>
+                    <a href="http://www.instagram.com/unas.lindas25?igsh=emhpajBjbzEwc3Nj"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/1849-251-6760" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                  </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <div class="welcome-page">
+        <div class="content">
+            <img src="img/perfil.jpeg" alt="Marianny Yissell Mena">
+            <h1>Marianny Yissell Mena</h1>
+            <p class="animated-paragraph">¡Bienvenidos a la sitio web de Marianny Yissell Mena, creadora apasionada en el mundo de la tecnología!
+                Como técnico en desarrollo y administración de aplicaciones informáticas, mi objetivo es fusionar creatividad y funcionalidad para brindar soluciones innovadoras.
+                Explora mi portafolio y descubre el potencial de la tecnología a través de mis proyectos.
+                ¡Únete a la experiencia única de Marianny Yissell Mena en el universo digital de la belleza!
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p2>&copy; 2024 Marianny Yissell Mena - Desarrolladora de Aplicaciones Informáticas</p2>
+    </footer>
+
+    
+</body>
+</html>
+
+<script src="script.js"></script>
+   
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const animatedParagraph = document.querySelector('.animated-paragraph');
+
+    window.addEventListener('scroll', function() {
+        if (isInViewport(animatedParagraph)) {
+            animatedParagraph.classList.add('active');
+        }
+    });
+
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+});
+
+
+
+</script>
+</body>
+</html> 

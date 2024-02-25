@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100;500 & display=swap');
+body{
+ background-color: rgba(0, 0, 0,0.5);
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  font-family: Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: rgba(0, 0, 0,0.5);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+  z-index: 99;
+}
+header ul li a{
+text-decoration: none;
+color: #fff;
+font-weight: 600;
+text-transform: uppercase;
+padding: 10px 15px;
+}
+header ul li a:hover{
+  border-bottom: 2px solid cadetblue;
+}
+
+header .logo{
+  flex: 1;
+  color: #fff;
+  margin-left: 100px;
+  
+}
+header ul {
+  list-style: none;
+  padding: 0;
+}
+header ul li{
+  list-style: none;
+}
+header ul li {
+  flex: 2;
+display: inline;
+margin-right: 20px;
+justify-content: space-evenly;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+header .menu{
+  font-size: 2.5em;
+  display: none;
+}
+
+
+
+ 
+
+p{
+    text-align: left;
+    font-weight: 300;
+    font-family:'poppins''Lucida Sans' ;
+    font-size: x-large;
+    line-height: 1.6;
+    color: #130909;
+}
+
+
+   
+
+}
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+video{
+   border-radius: 10% ;
+   padding: 15px;
+   display: inline-block;
+   vertical-align: top;
+
+    
+}
+video,p{
+    padding: 10px;
+}
+.section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    animation: banner 10s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes banner {
+    0%, 20%{
+        background-image: url(img/img6.jpg);
+    }
+    25%, 45%{
+        background-image: url(img/new/z.jpeg);
+    }
+    50%, 70%{
+        background-image: url(img/img11.jpeg);
+    }
+    75%, 100%{
+        background-image: url(img/img13.jpeg);
+    }
+}
+.capa{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.6);
+}
+.info{
+    z-index: 1;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+}
+.info h1{
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+
+}
+.info p {
+    color: #c7c7c7;
+    line-height: 1.7;
+    margin: 30px;
+}
+.texto{
+    background-color: rgba(0, 0, 0,0.5);
+    color: #fff;
+    padding: 10px;
+}
+button{
+    display: inline-block;
+    border: none;
+    height: 50px;
+    border-radius: 30px;
+    padding: 10px 0;
+    width: 200px;
+    background-color: #09daf5;
+    font-weight: 800;
+    transition: 150ms;
+    margin-top: 40px;
+    text-decoration: center;
+    
+ }
+ button:focus{
+    outline: none;
+ }
+ button:hover{
+    transform: translate(0, -5px);
+ }
+ h4{
+    font-size: 2.5rem;
+    text-align: left;
+    color: #2811a8;
+    font-weight: 900;
+ }
+
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.animated-paragraph {
+  font-style: 'Cursive Font', cursive;
+  font-size: 1.5em;
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* Nombre de la animación, duración y retención del estado final */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.animated-img {
+  width: 200px; /* Ajusta el tamaño según sea necesario */
+  height: 200px; /* Ajusta el tamaño según sea necesario */
+  margin: 10px; /* Espacio entre las imágenes */
+  border-radius: 50%; /* Forma circular */
+  animation: slideIn 2s ease-in-out infinite alternate; /* Nombre de la animación, duración, repetición e iteración */
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(0);
+  }
+  to {
+      transform: translateY(-20px);
+  }
+}
